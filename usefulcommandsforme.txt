@@ -1,0 +1,5 @@
+start fastapi server:
+uvicorn main:app --reload
+
+activate python venv:
+source venv/Scripts/activate

@@ -1,6 +1,9 @@
 # virtual environment
 venv/
 
+# config
+config.json
+
 # Python bytecode files
 __pycache__/
 

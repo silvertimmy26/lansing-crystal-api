@@ -2,9 +2,12 @@ from fastapi import FastAPI, HTTPException
 import requests
 import os
 
-app = FastAPI()
+# Load the config file
+with open("config.json", "r") as config_file:
+    config = json.load(config_file)
+API_KEY = config["API_KEY"]
 
-API_KEY = "42b84b798b874e45492b60036b84256b"
+app = FastAPI()
 
 def format_weather_data(data):
     # Grabbing only relevant info and making it more readable
